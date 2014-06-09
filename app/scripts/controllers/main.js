@@ -31,8 +31,6 @@ angular.module('worldCupApp')
       var matchDate = getTime(Fixtures[i].date);
 
       if( today.getTime() === matchDate ) {
-        console.log(today.getTime());
-        console.log(matchDate);
         $scope.matchToday = true;
         $scope.match = Fixtures[i];
         break;

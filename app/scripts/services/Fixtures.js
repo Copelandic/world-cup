@@ -4,10 +4,10 @@ angular.module('worldCupApp')
   .factory('Fixtures', function () {
 
     return [
-      {teamOne: 'Brazil', teamOneClassName: 'brazil', teamTwo: 'Croatia', teamTwoClassName: 'croatia', date: '05/06/2014', location: 'Arena de São Paulo, São Paulo', kickoff: '21:00', channel: 'ITV'},
-      {teamOne: 'Mexico', teamOneClassName: 'mexico', teamTwo: 'Cameroon', teamTwoClassName: 'cameroon', date: '06/06/2014', location: 'Estádio das Dunas, Natal', kickoff: '17:00', channel: 'BBC'},
-      {teamOne: 'Spain', teamOneClassName: 'spain', teamTwo: 'Netherlands', teamTwoClassName: 'netherlands', date: '06/06/2014', location: 'Arena Fonte Nova, Salvador', kickoff: '20:00', channel: 'BBC'},
-      {teamOne: 'Chile', teamOneClassName: 'chile', teamTwo: 'Australia', teamTwoClassName: 'australia', date: '06/06/2014', location: 'Arena Pantanal, Cuiabá', kickoff: '23:00', channel: 'BBC'},
+      {teamOne: 'Brazil', teamOneClassName: 'brazil', teamTwo: 'Croatia', teamTwoClassName: 'croatia', date: '08/06/2014', location: 'Arena de São Paulo, São Paulo', kickoff: '21:00', channel: 'ITV'},
+      {teamOne: 'Mexico', teamOneClassName: 'mexico', teamTwo: 'Cameroon', teamTwoClassName: 'cameroon', date: '09/06/2014', location: 'Estádio das Dunas, Natal', kickoff: '17:00', channel: 'BBC'},
+      {teamOne: 'Spain', teamOneClassName: 'spain', teamTwo: 'Netherlands', teamTwoClassName: 'netherlands', date: '09/06/2014', location: 'Arena Fonte Nova, Salvador', kickoff: '20:00', channel: 'BBC'},
+      {teamOne: 'Chile', teamOneClassName: 'chile', teamTwo: 'Australia', teamTwoClassName: 'australia', date: '09/06/2014', location: 'Arena Pantanal, Cuiabá', kickoff: '23:00', channel: 'BBC'},
       {teamOne: 'Colombia', teamOneClassName: 'colombia', teamTwo: 'Greece', teamTwoClassName: 'greece', date: '14/06/2014', location: 'Estádio Mineirão, Belo Horizonte', kickoff: '17:00', channel: 'BBC'},
       {teamOne: 'Ivory Coast', teamOneClassName: 'ivory-coast', teamTwo: 'Japan', teamTwoClassName: 'japan', date: '14/06/2014', location: 'Arena Pernambuco, Recife', kickoff: '02:00', channel: 'BBC'},
       {teamOne: 'Uruguay', teamOneClassName: 'uruguay', teamTwo: 'Costa Rica', teamTwoClassName: 'costa-rica', date: '14/06/2014', location: 'Estádio Castelão, Fortaleza', kickoff: '20:00', channel: 'BBC'},
