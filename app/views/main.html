@@ -1,9 +1,12 @@
-<div ng-show="matchToday">
-  <h1 class="team {{match.teamOneClassName}}">{{match.teamOne}}</h1>
+<div data-ng-repeat="fixture in Fixtures">
+  <h1 class="team {{fixture.teamOneClassName}}">{{fixture.teamOne}}</h1>
   <p>v</p>
-  <h1 class="team {{match.teamTwoClassName}}">{{match.teamTwo}}</h1>
-  <h3>{{match.location}}</h3>
-  <h3>{{match.kickoff}} BST</h3>
-  <h4>{{match.channel}}</h4>
+  <h1 class="team {{fixture.teamTwoClassName}}">{{fixture.teamTwo}}</h1>
+  <h3>{{fixture.location}}</h3>
+  <h3>{{fixture.kickoff}} BST</h3>
+  <h4>{{fixture.channel}}</h4>
+</div>
+<div ng-hide="fixtureToday">
+  <h2>No game on today. Check back on June 12th when the action gets underway!</h2>
 </div>
 

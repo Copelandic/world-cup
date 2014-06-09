@@ -2,9 +2,50 @@
   font-family: futura, sans-serif;
   font-weight: 100;
 }
+html{
+  padding: 0;
+  margin: 0;
+}
 body{
   background: #fff;
+  padding: 0;
+  margin: 0;
 }
+
+header{
+  background: #fedf00;
+  padding: 1px 0;
+  margin-bottom: 50px;
+  h1{
+    color: #24814b;
+  }
+  h2{
+    color: #0f59a5;
+  }
+  ul{
+    list-style-type: none;
+    margin: 0 auto 20px;
+    text-align: center;
+    overflow: hidden;
+    display: table;
+    padding: 0;
+    li{
+      text-align: center;
+      float: left;
+      margin-right: 25px;
+      a{
+        color: #24814b;
+        &:hover{
+          color: #0f59a5;
+        }
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
+
 .group{
   clear: both;
   h3{
@@ -23,8 +64,17 @@ body{
   margin: 10px auto;
   line-height: 60px;
   transition: background ease 1s, color ease 1s;
+  font-size: 24px;
+  &.group{
+    border: none;
+    margin-top: 30px;
+  }
 }
-p, h3, h4{text-align: center;}
+p, h1, h2, h3, h4{text-align: center;}
+h3,h4{
+  color: #0f59a5;
+}
+
 .australia{
   border-color: #fbd13a;
   color: #fbd13a;
@@ -100,7 +150,7 @@ p, h3, h4{text-align: center;}
 .bos-herz{
   border-color: #0054a6;
   color: #0054a6;
-  line-height: 20px;
+  line-height: 28px;
   &:hover{
     background: #0054a6;
     color: #ffffff;
@@ -283,5 +333,21 @@ p, h3, h4{text-align: center;}
   &:hover{
     background: #2272b1;
     color: #ffffff;
+  }
+}
+
+.fixture-list{
+  ul{
+    list-style-type: none;
+    padding: 0;
+  }
+}
+.fixture-search{
+  text-align: center;
+  input{
+    border: 1px solid black;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
   }
 }

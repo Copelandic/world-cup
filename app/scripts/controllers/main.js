@@ -28,15 +28,16 @@ angular.module('worldCupApp')
 
     for(var i = 0; i <= Fixtures.length-1;i++) {
 
-      var matchDate = getTime(Fixtures[i].date);
+      var fixtureDate = getTime(Fixtures[i].date);
+      $scope.Fixtures = Fixtures;
 
-      if( today.getTime() === matchDate ) {
-        $scope.matchToday = true;
-        $scope.match = Fixtures[i];
+      if( today.getTime() === fixtureDate ) {
+        $scope.fixtureToday = true;
+        $scope.fixture = Fixtures[i];
         break;
-      } else if( today < matchDate ) {
-        $scope.matchToday = false;
-        $scope.match = Fixtures[i];
+      } else if( today < fixtureDate ) {
+        $scope.fixtureToday = false;
+        $scope.fixture = Fixtures[i];
         break;
       }
 

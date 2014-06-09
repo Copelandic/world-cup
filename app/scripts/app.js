@@ -27,6 +27,10 @@ angular
         templateUrl: 'views/fixtures.html',
         controller: 'FixturesCtrl'
       })
+      .when('/groups', {
+        templateUrl: 'views/groups.html',
+        controller: 'GroupsCtrl'
+      })
       .when('/calendar', {
         templateUrl: 'views/calendar.html',
         controller: 'CalendarCtrl'
