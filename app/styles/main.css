@@ -1,0 +1,254 @@
+* {
+  font-family: futura, sans-serif;
+  font-weight: 100; }
+
+body {
+  background: #fedf00; }
+
+.group {
+  clear: both; }
+  .group h3 {
+    margin: 20px 10px 10px;
+    float: left; }
+    @media (max-width: 600px) {
+      .group h3 {
+        float: none; } }
+
+.team {
+  width: 150px;
+  height: 60px;
+  text-align: center;
+  border: 2px solid;
+  margin: 10px auto;
+  line-height: 60px;
+  transition: background ease 1s, color ease 1s; }
+
+p, h3, h4 {
+  text-align: center; }
+
+.australia {
+  border-color: #fbd13a;
+  color: #fbd13a; }
+  .australia:hover {
+    background: #fbd13a;
+    color: #00644f; }
+
+.algeria {
+  border-color: #6fa976;
+  color: #6fa976; }
+  .algeria:hover {
+    background: #6fa976;
+    color: #ffffff; }
+
+.argentina {
+  border-color: #82b3d6;
+  color: #82b3d6; }
+  .argentina:hover {
+    background: #82b3d6;
+    color: #ffffff; }
+
+.brazil {
+  border-color: #ffd737;
+  color: #0f59a5; }
+  .brazil:hover {
+    background: #ffd737;
+    color: #24814b; }
+
+.chile {
+  border-color: #ed1c24;
+  color: #204382; }
+  .chile:hover {
+    background: #ed1c24;
+    color: #204382; }
+
+.colombia {
+  border-color: #fae100;
+  color: #3b455d; }
+  .colombia:hover {
+    background: #fae100;
+    color: #3b455d; }
+
+.ecuador {
+  border-color: #fae209;
+  color: #254ea2; }
+  .ecuador:hover {
+    background: #fae209;
+    color: #254ea2; }
+
+.cameroon {
+  border-color: #37806b;
+  color: #b71a1f; }
+  .cameroon:hover {
+    background: #37806b;
+    color: #b71a1f; }
+
+.belgium {
+  border-color: #ef3b24;
+  color: #ffd400; }
+  .belgium:hover {
+    background: #ef3b24;
+    color: #ffd400; }
+
+.bos-herz {
+  border-color: #0054a6;
+  color: #0054a6;
+  line-height: 20px; }
+  .bos-herz:hover {
+    background: #0054a6;
+    color: #ffffff; }
+
+.uruguay {
+  border-color: #6499cb;
+  color: #282828; }
+  .uruguay:hover {
+    background: #6499cb;
+    color: #282828; }
+
+.costa-rica {
+  border-color: #ed1c24;
+  color: #254ea2; }
+  .costa-rica:hover {
+    background: #ed1c24;
+    color: #254ea2; }
+
+.england {
+  border-color: #00509d;
+  color: #cb3a3b; }
+  .england:hover {
+    background: #cb3a3b;
+    border-color: #cb3a3b;
+    color: #ffffff; }
+
+.ivory-coast {
+  border-color: #fdbb2d;
+  color: #4ba38e; }
+  .ivory-coast:hover {
+    background: #fdbb2d;
+    color: #4ba38e; }
+
+.iran {
+  border-color: #ed1c24;
+  color: #009261; }
+  .iran:hover {
+    background: #ed1c24;
+    color: #009261; }
+
+.japan {
+  border-color: #26418a;
+  color: #f0534d; }
+  .japan:hover {
+    background: #26418a;
+    color: #ffffff; }
+
+.france {
+  border-color: #1e3861;
+  color: #bf1927; }
+  .france:hover {
+    background: #1e3861;
+    color: #ffffff; }
+
+.germany {
+  border-color: #282828;
+  color: #d21c22; }
+  .germany:hover {
+    background: #282828;
+    color: #d21c22; }
+
+.south-korea {
+  border-color: #e03237;
+  color: #0054a6; }
+  .south-korea:hover {
+    background: #e03237;
+    color: #0054a6; }
+
+.greece {
+  border-color: #034ea2;
+  color: #034ea2; }
+  .greece:hover {
+    background: #034ea2;
+    color: #ffffff; }
+
+.netherlands {
+  border-color: #f15d22;
+  color: #f15d22; }
+  .netherlands:hover {
+    background: #f15d22;
+    color: #ffffff; }
+
+.ghana {
+  border-color: #282828;
+  color: #282828; }
+  .ghana:hover {
+    background: #282828;
+    color: #ffffff; }
+
+.mexico {
+  border-color: #106f56;
+  color: #db1a21; }
+  .mexico:hover {
+    background: #106f56;
+    color: #db1a21; }
+
+.italy {
+  border-color: #1d61ae;
+  color: #1d61ae; }
+  .italy:hover {
+    background: #1d61ae;
+    color: #ffffff; }
+
+.usa {
+  border-color: #ed1c24;
+  color: #034ea2; }
+  .usa:hover {
+    background: #034ea2;
+    border-color: #034ea2;
+    color: #ed1c24; }
+
+.portugal {
+  border-color: #8f292e;
+  color: #006536; }
+  .portugal:hover {
+    background: #8f292e;
+    color: #006536; }
+
+.russia {
+  border-color: #ad2733;
+  color: #d8aa83; }
+  .russia:hover {
+    background: #ad2733;
+    color: #d8aa83; }
+
+.spain {
+  border-color: #d41f33;
+  color: #e2c7a2; }
+  .spain:hover {
+    background: #d41f33;
+    color: #e2c7a2; }
+
+.switzerland {
+  border-color: #ed1c24;
+  color: #ed1c24; }
+  .switzerland:hover {
+    background: #ed1c24;
+    color: #ffffff; }
+
+.nigeria {
+  border-color: #6ab745;
+  color: #2d6642; }
+  .nigeria:hover {
+    background: #6ab745;
+    color: #2d6642; }
+
+.croatia {
+  border-color: #ed1c24;
+  color: #6486b9; }
+  .croatia:hover {
+    background: #ed1c24;
+    color: #ffffff; }
+
+.honduras {
+  border-color: #2272b1;
+  color: #2272b1; }
+  .honduras:hover {
+    background: #2272b1;
+    color: #ffffff; }
