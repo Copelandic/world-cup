@@ -15,30 +15,26 @@ angular.module('worldCupApp')
       'Karma'
     ];
 
-    var date = new Date(),
-      day = date.getDate(),
-      month = date.getMonth(),
-      year = date.getFullYear(),
-      today = new Date(year,month,day);
 
-    function getTime( date ) {
-      var _date = date.split('/');
-      return new Date(_date[2],_date[1]-1,_date[0]).getTime();
+    var d = new Date();
+    var currDate = d.getDate();
+    var currMonth = d.getMonth() + 1; //Months are zero based
+    var currYear = d.getFullYear();
+    if(currMonth < 10) {
+      currMonth = '0' + currMonth;
     }
+    var currDay = currDate + '/' + currMonth + '/' + currYear;
+    console.log(currDay);
+
+    $scope.todaysGames = [];
 
     for(var i = 0; i <= Fixtures.length-1;i++) {
 
-      var fixtureDate = getTime(Fixtures[i].date);
-      $scope.Fixtures = Fixtures;
+      var fixtureDate = Fixtures[i].date;
 
-      if( today.getTime() === fixtureDate ) {
-        $scope.fixtureToday = true;
-        $scope.fixture = Fixtures[i];
-        break;
-      } else if( today < fixtureDate ) {
-        $scope.fixtureToday = false;
-        $scope.fixture = Fixtures[i];
-        break;
+      if( currDay === fixtureDate ) {
+        $scope.todaysGames.push(  Fixtures[i] );
+        document.querySelector('.nothing').style.display='none';
       }
 
     }

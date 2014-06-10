@@ -1,12 +1,10 @@
-<div ng-show="fixtureToday">
-  <h1 class="team {{fixture.teamOneClassName}}">{{fixture.teamOne}}</h1>
-  <p>v</p>
-  <h1 class="team {{fixture.teamTwoClassName}}">{{fixture.teamTwo}}</h1>
-  <h3>{{fixture.location}}</h3>
-  <h3>{{fixture.kickoff}} BST</h3>
-  <h4>{{fixture.channel}}</h4>
+<div ng-repeat="fixture in todaysGames">
+    <h1 class="team {{fixture.teamOneClassName}}">{{fixture.teamOne}}</h1>
+    <p>v</p>
+    <h1 class="team {{fixture.teamTwoClassName}}">{{fixture.teamTwo}}</h1>
+    <h3>{{fixture.location}}</h3>
+    <h3>{{fixture.kickoff}} BST</h3>
+    <h4>{{fixture.channel}}</h4>
+  </div>
 </div>
-<div ng-hide="fixtureToday">
-  <h2>No game on today. Check back on June 12th when the action gets underway!</h2>
-</div>
-
+<h1 class="nothing">Nothing on today! The tournament kicks off on Thursday 12th June</h1>
