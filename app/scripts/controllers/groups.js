@@ -20,11 +20,21 @@ angular.module('worldCupApp')
     $scope.add = function() {
       $scope.teams.push({
         team: $scope.newTeam,
-        teamOneClassName: $scope.newTeamOneClassName,
+        teamClass: $scope.newTeamClass,
       });
       $scope.newTeam = '';
-      $scope.newTeamOneClassName = '';
+      $scope.newTeamClass = '';
     };
+
+    for(var i = 0; i <= Teams.length-1;i++) {
+
+      var team = Teams[i].team;
+      console.log(team);
+      var teamResult = team.replace(/[^a-zA-Z0-9\s]/g, '').replace(/^\s+|\s+$/, '').replace(/\s+/g, '-').toLowerCase();
+      Teams[i].teamClass = teamResult;
+
+      $scope.newTeamClass = teamResult;
+    }
 
     $scope.remove = function(index) {
       $scope.teams.splice(index, 1);

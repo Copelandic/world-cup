@@ -37,6 +37,21 @@ angular.module('worldCupApp')
       $scope.newTeamTwoClassName = '';
     };
 
+    for(var i = 0; i <= Fixtures.length-1;i++) {
+
+      var teamOne = Fixtures[i].teamOne;
+      var teamTwo = Fixtures[i].teamTwo;
+      console.log(teamOne);
+      console.log(teamTwo);
+      var teamOneResult = teamOne.replace(/[^a-zA-Z0-9\s]/g, '').replace(/^\s+|\s+$/, '').replace(/\s+/g, '-').toLowerCase();
+      var teamTwoResult = teamTwo.replace(/[^a-zA-Z0-9\s]/g, '').replace(/^\s+|\s+$/, '').replace(/\s+/g, '-').toLowerCase();
+      Fixtures[i].teamOneClassName = teamOneResult;
+      Fixtures[i].teamTwoClassName = teamTwoResult;
+
+      $scope.newTeamOneClassName = teamOneResult;
+      $scope.newTeamTwoClassName = teamTwoResult;
+    }
+
     $scope.remove = function(index) {
       $scope.fixtures.splice(index, 1);
     };

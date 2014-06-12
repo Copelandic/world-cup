@@ -15,6 +15,7 @@ angular.module('worldCupApp')
       'Karma'
     ];
 
+    console.log(Fixtures[0].teamOne);
 
     var d = new Date();
     var currDate = d.getDate();
@@ -31,6 +32,13 @@ angular.module('worldCupApp')
     for(var i = 0; i <= Fixtures.length-1;i++) {
 
       var fixtureDate = Fixtures[i].date;
+
+      var teamOne = Fixtures[i].teamOne;
+      var teamTwo = Fixtures[i].teamTwo;
+      var teamOneResult = teamOne.replace(/[^a-zA-Z0-9\s]/g, '').replace(/^\s+|\s+$/, '').replace(/\s+/g, '-').toLowerCase();
+      var teamTwoResult = teamTwo.replace(/[^a-zA-Z0-9\s]/g, '').replace(/^\s+|\s+$/, '').replace(/\s+/g, '-').toLowerCase();
+      Fixtures[i].teamOneClassName = teamOneResult;
+      Fixtures[i].teamTwoClassName = teamTwoResult;
 
       if( currDay === fixtureDate ) {
         $scope.todaysGames.push(  Fixtures[i] );
